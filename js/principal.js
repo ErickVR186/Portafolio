@@ -62,3 +62,21 @@ window.addEventListener("load", function(){
 	});
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+	var enlace = document.getElementsByClassName('videoLink');
+	for (var i = 0; i < enlace.length; i++) {
+		enlace[i].addEventListener('click', function(event) {
+			event.preventDefault();  
+			document.querySelector('.popup-video').style.display = 'block';
+			document.querySelector('.popup-video iframe').src = this.getAttribute("data-valor");
+		});
+	}
+	
+	var close = document.getElementById('close');
+	close.addEventListener('click', function(event) {
+		event.preventDefault(); 
+		document.querySelector('.popup-video').style.display = 'none';
+	});
+});
+
