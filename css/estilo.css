@@ -181,8 +181,8 @@ body{
 #sobreMi{
 	padding-right: 25px;
 	display: grid;
-	/*grid-template-columns: 67vh 140vh;*/
-	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	grid-template-columns: 40% 60%;
+	/*grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));*/
 	/*gap:5px;*/
 	gap: 25px;
 	
@@ -200,6 +200,7 @@ body{
 	color: #000000;
 	box-shadow: 5px 5px;
 	padding: 30px;
+	margin-right: 25px
 }
 
 .carrucel{
